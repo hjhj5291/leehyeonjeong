@@ -1,0 +1,321 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0;
+
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { 
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1280px;
+	position: fixed;
+}
+
+/*header*/
+#header{
+     width:100%;
+    margin:0 auto;
+    position:fixed;
+    background:rgba(0,0,0,0.8);
+    z-index: 100;
+    
+}
+.headerIn{
+ 
+}
+.headerIn h1{
+    position:absolute;
+    top:10px;
+    color: #fff;
+     margin: 0 30px;
+}
+.headerIn a{
+    
+}
+.headerIn a span.icon{
+    width: 25px;
+    height: 59px;
+    background: url(../../images/head-logo.png) no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+}
+.headerIn a span{
+    color: #fff;
+    font-family: 'Dancing Script';
+   
+}
+/*메뉴시작*/
+.gnb{
+    width:100%;
+    margin:0 250px;
+    text-align:center;
+    
+}
+.gnb li{
+    width:150px;
+    display:inline-block;
+    text-align:center;
+    font-size:14px;    
+}
+.gnb li:hover a{
+    transform:scale(1.2);
+    font-weight: bold;
+  color: #ed1f24;
+    transition:all 0.5s;
+}
+.gnb li a{
+    height:80px;
+    line-height:80px;
+    display: block;
+    color: #fff;
+}
+
+.gnb li:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #ed1f24;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.gnb li:hover:after{
+  width: 70px;
+}
+
+
+
+.containertop{
+   padding-top: 150px;
+position: relative;
+
+}
+.containertop h1{
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-size: 100px;
+}
+.containertop h1:before{
+  content: "";
+    display: block;
+    width: 70px;
+    height: 10px;
+    background: #000;
+        margin-top: -20px;
+    left: 50%;
+    margin-left: -170px;
+    position: absolute;
+  
+}
+
+/*container*/
+#container{    
+
+ margin:100px ;
+padding-bottom: 50px;
+}
+.containerleft{    
+  float: left;
+width: 40%;
+   
+}
+.containerleft img{   
+width: 100%;
+}
+.containerright{
+    float:left;
+    width: 50%;
+    padding-left: 10%;
+}
+.rightTop{
+
+}
+.rightTop h4{
+    font-size: 20px;
+}
+.right1{}
+.right1 span{
+    
+}
+.right1 span.right1_1{
+    font-size: 40px;
+  font-weight:bold;
+}
+.right1 span.right1_2{
+        font-size: 40px;
+    font-weight:lighter;
+}
+.right1 span.right1_3{
+     font-size: 40px;
+    color: #ed1f24;
+}
+.right2{
+     padding-bottom:50px;
+}
+.right2 span{
+    
+}
+.right2 span.right2_1{
+       font-size: 40px;
+    font-weight: bolder;
+letter-spacing: 5px;
+}
+
+.right2 span.right2_2{
+       font-size: 40px;
+   
+}
+
+.rightTop dl{
+     font-size: 19px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.rightTop dl dt{ 
+    width: 100px;
+    float: left;
+    position: relative;
+    color: #000;
+    font-weight: bold;
+}
+.rightTop dl dd{
+    float: left;
+    padding-left: 50px;
+    
+}
+
+
+
+
+
+
+/*footer*/
+#section3{
+    background: #130e0c;
+     color: white;
+  position: relative;
+}
+.footerLeft{
+    width: 39px;
+    height: 152px;
+    text-indent: -9999px;
+    background: url(../../images/footerlogo.png) no-repeat;
+    margin-left: 100px;
+    background-position:0 center;
+  
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+.footer span{}
+.footer .left{}
+.footer .left img{
+vertical-align: middle;
+}
+.footer .left span{}
+.footer .right{
+    padding: 20px 0;
+     border-bottom: 1px solid #fff;
+}
+.footer .right img{
+  vertical-align: middle;
+
+   
+}
+.footer .right span{
+
+ 
+}
+.footerbottom{
+    padding:15px 0;
+}
+.footerbottom img{
+      vertical-align: middle;
+}
+
+.footerbottom span{
+ 
+}
+.facebook{
+
+    background: url(../../images/facebook.png) no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:50px;
+    top:93px;
+
+   
+}
+.instagram{
+    background: url(../../images/insta.png) no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top:93px;
+    vertical-align: middle;
+}

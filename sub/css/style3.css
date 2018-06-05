@@ -1,0 +1,357 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0;
+
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { 
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1280px;
+	position: fixed;
+}
+
+/*header*/
+#header{
+     width:100%;
+    margin:0 auto;
+    position:fixed;
+    background:rgba(0,0,0,0.8);
+    z-index: 100;
+    
+}
+.headerIn{
+ 
+}
+.headerIn h1{
+    position:absolute;
+    top:10px;
+    color: #fff;
+     margin: 0 30px;
+}
+.headerIn a{
+    
+}
+.headerIn a span.icon{
+    width: 25px;
+    height: 59px;
+    background: url(../../images/head-logo.png) no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+}
+.headerIn a span{
+    color: #fff;
+    font-family: 'Dancing Script';
+   
+}
+/*메뉴시작*/
+.gnb{
+    width:100%;
+    margin:0 250px;
+    text-align:center;
+    
+}
+.gnb li{
+    width:150px;
+    display:inline-block;
+    text-align:center;
+    font-size:14px;    
+}
+.gnb li:hover a{
+    transform:scale(1.2);
+    font-weight: bold;
+  color: #ed1f24;
+    transition:all 0.5s;
+}
+.gnb li a{
+    height:80px;
+    line-height:80px;
+    display: block;
+    color: #fff;
+}
+
+.gnb li:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #ed1f24;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.gnb li:hover:after{
+  width: 70px;
+}
+
+
+/*mainslider*/
+.mainslider{
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.mainslider img{
+    width: 100%;
+    position:absolute;
+    display: block;
+ 
+
+
+}
+.textbox{
+   position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    margin-top: -102px;
+    background: rgba(0,0,0,0.3);
+    padding: 30px 0;
+}
+.textbox h4{
+    font-size: 100px;
+    font-weight: bold;
+    width: 100%;
+    font-family: 'Dancing Script';
+
+}
+.textbox p{
+    font-weight: lighter;
+    font-size: 17px;    
+    padding:10px 0;
+}
+
+/*entries*/
+.entries:before{
+ content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    bottom:200px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 4px;
+    background-color: #000;
+}
+.entries {
+    width: calc(100% - 80px);
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    left: -5px;
+    font-family: 'Droid Sans', sans-serif;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.entries .entry{
+    width: calc(50% - 80px);
+    float: left;
+    padding: 20px;
+    clear: both;
+    text-align: right;
+}
+.entries .entry .title {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    position: relative;
+    color: #000;
+}
+ .entries .entry:nth-child(2n) .title:before {
+    left: -73px;
+    border: 8px solid #000;
+    background-color: #fff;
+}
+.entries .entry .title:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 8px solid #bcbcbc;
+    background-color: #000;
+    border-radius: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: -73px;
+    z-index: 1000;
+}
+.entries .entry .monthWrap{
+    color: #aaa;
+}
+.entries .entry .monthWrap p{
+    
+}
+.monthWrap span{}
+.monthWrap span.month{
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+    display: inline-block;
+    
+}
+.monthWrap span.monthInfo{
+     color: black;
+    font-size: 15px;
+      line-height: 1.4em;
+    display: inline-block;
+    width: 300px;
+    padding:10px 0;
+}
+
+
+
+.entries .entry p{
+  
+    
+}
+
+.entries .entry p{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ .entries .entry:nth-child(2n) {
+    text-align: left;
+    float: right;
+}
+.entries .entry:not(:first-child) {
+    margin-top: -40px;
+}
+
+
+/*footer*/
+#Footer{
+    background: #130e0c;
+     color: white;
+  position: relative;
+ 
+}
+.footerLeft{
+    width: 39px;
+    height: 152px;
+    text-indent: -9999px;
+    background: url(../../images/footerlogo.png) no-repeat;
+    margin-left: 100px;
+    background-position:0 center;
+  
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding-left: 20%;
+    box-sizing: border-box;
+    
+}
+.footer span{}
+.footer .left{}
+.footer .left img{
+vertical-align: middle;
+}
+.footer .left span{}
+.footer .right{
+    padding: 20px 0;
+     border-bottom: 1px solid #fff;
+}
+.footer .right img{
+  vertical-align: middle;
+
+   
+}
+.footer .right span{
+
+ 
+}
+.footerbottom{
+    padding:15px 0;
+}
+.footerbottom img{
+      vertical-align: middle;
+}
+
+.footerbottom span{
+ 
+}
+.facebook{
+
+    background: url(../../images/facebook.png) no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:50px;
+    top:93px;
+
+   
+}
+.instagram{
+    background: url(../../images/insta.png) no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top:93px;
+    vertical-align: middle;
+}
+

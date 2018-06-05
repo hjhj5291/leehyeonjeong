@@ -1,0 +1,473 @@
+@CHARSET "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+    padding:0;
+
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { 
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1280px;
+	position: fixed;
+}
+
+/*header*/
+#header{
+     width:100%;
+    margin:0 auto;
+    position:fixed;
+    background:rgba(0,0,0,0.8);
+    z-index: 100;
+    
+}
+.headerIn{
+ 
+}
+.headerIn h1{
+    position:absolute;
+    top:10px;
+    color: #fff;
+     margin: 0 30px;
+}
+.headerIn a{
+    
+}
+.headerIn a span.icon{
+    width: 25px;
+    height: 59px;
+    background: url(../images/head-logo.png) no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+}
+.headerIn a span{
+    color: #fff;
+    font-family: 'Dancing Script';
+   
+}
+/*메뉴시작*/
+.gnb{
+    width:100%;
+    margin:0 250px;
+    text-align:center;
+
+    
+}
+.gnb li{
+    width:150px;
+    display:inline-block;
+    text-align:center;
+    font-size:14px;    
+}
+.gnb li:hover a{
+    transform:scale(1.2);
+    font-weight: bold;
+  color: #ed1f24;
+    transition:all 0.5s;
+}
+.gnb li a{
+    height:80px;
+    line-height:80px;
+    display: block;
+    color: #fff;
+}
+
+.gnb li:after{
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #ed1f24;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.gnb li:hover:after{
+  width: 70px;
+}
+
+/*fullpage*/
+#fullpage{}
+
+/*section0*/
+#section0{}
+.mainslider{
+    width:100%;
+    height: 100%;
+    position:relative;
+    overflow:hidden;
+    
+}
+.mainslider:before{
+   width: 100%;
+    height: 1020px;
+    content: "";
+    display: block;
+    background: rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 1;
+}
+.mainslider img{
+    position:absolute;
+    display: block;
+     left: 50%;
+    margin-left: -960px;
+  
+}
+.textbox{
+    position: absolute;
+    color: #fff;
+    top: 250px;
+    left: 520px;
+    z-index: 2;
+}
+.textbox h4{
+padding: 20px 0;
+font-size: 20px;    
+font-weight: 500;
+}
+.textbox p{
+ 
+    font-weight: lighter;
+    font-size: 50px;    
+}
+.textbox h1{
+padding: 40px 0;
+font-size: 50px;    
+
+}
+
+/*section1*/
+.prebtn{
+    color: #fff;
+    left: 30px;
+}
+.nextbtn{
+    color: #fff;
+    right: 30px;
+}
+.prebtn,.nextbtn{
+    position: absolute;
+    font-size:50px;
+    cursor: pointer;
+     z-index: 10;
+    top: 46.5%;
+    margin-top: -46.5px;/*중앙정렬 topd에서 반값*/
+}
+slick-list{
+    position: relative;
+}
+.slick-dots{
+    text-align: center;
+}
+.slick-dots button{
+    width: 10px;
+    height: 10px;
+    background: #130e0c;
+    border:0;
+    text-indent: -9999px;
+    padding: 0;
+    vertical-align: top;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.slick-dots li{
+    width: 10px;
+    height: 10px;
+     display: inline-block;
+    vertical-align: top;
+    margin: 0 3px;
+}
+
+.slick-dots li.slick-active button{
+    background: #ddd;
+    
+}
+
+
+
+#section1{}
+#section1 .slick-slide{
+    margin:10px;
+}
+.portfolio{
+    padding:10px;
+}
+.regular slider{}
+.portfolio .slick-slide img{
+    width:100%;
+    transition: all 0.5s;
+}
+.row1Box{
+    position: relative;
+  overflow: hidden;
+
+}
+.row1Box a{}
+.row1Box a img{
+       background:rgba(0,0,0,0.5);
+}
+
+.row1Box h3{
+    font-size:40px;
+    font-family: 'Dancing Script';
+   
+}
+
+.row1Box p{
+     font-size:14px;    
+    display:none;
+}
+
+.row1textbox{
+    width:100%;
+    position: absolute;
+    top: 50%;
+    margin-top:-23.89px;
+    color: #fff;
+    z-index: 3;
+    text-align:center;
+    font-weight: bold;
+    text-shadow:2px 2px 1px gray;
+}
+.row1Box:before{
+   width: 100%;
+    height: 100%;
+    content: "";
+    display: block;
+    background: rgba(0,0,0,0);
+    position: absolute;
+    z-index: 2;
+}
+.row1Box:hover:before{
+    background: rgba(0,0,0,0.5);
+   
+}
+
+.row1Box:hover p{
+    display:block;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow:2px 2px 2px gray;
+}
+.row1Box:hover img{
+    transform:scale(1.2,1.2)
+}
+
+.row1Box2{}
+.row1Box2 a{}
+.row1Box2 a img{}
+.row1Box2 h3{}
+.row1Box2 p{}
+
+
+.row1Box3{}
+.row1Box3 a{}
+.row1Box3 a img{}
+.row1Box3 h3{}
+.row1Box3 p{}
+
+
+.row1Box4{}
+.row1Box4 a{}
+.row1Box4 a img{}
+.row1Box4 h3{}
+.row1Box4 p{}
+
+
+.row1Box5{}
+.row1Box5 a{}
+.row1Box5 a img{}
+.row1Box5 h3{}
+.row1Box5 p{}
+
+/*section2*/
+#section2{
+background: url(../images/img6.png) no-repeat;
+width:100%;
+text-align: center;
+padding-top:100px;
+padding-bottom: 50px;
+color: white;
+position: relative;
+    background-size: cover;
+}
+.section2box1{
+    position: absolute;
+    top: 10%;
+    left: 960px;
+    margin-left: -480px;
+}
+.section2box1 h2{
+   top: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    
+}
+.section2box1 h2:before {
+content: "";
+    display: block;
+    width: 35px;
+    height: 3px;
+    background: #fff;
+    margin:5px auto;
+}
+.section2box1 p{
+     text-align: center;
+      color: #fff;
+    padding: 30px 0;
+    font-size: 18px;
+}
+.section2box2{
+    width: 30%;
+    height: 23%;
+   box-sizing: border-box;
+    background: #ed1f24;
+    background: rgba(232,30,35,0.8);
+    padding: 50px 0;
+    display: block;
+    margin:240px 200px;
+    position: absolute;
+}
+.section2box2 a{}
+.section2box2 a h1{
+    color: #fff;
+    
+}
+.section2box2 a p{
+    padding: 30px 0;
+       color: #fff;
+    font-size: 18px;
+}
+
+
+
+/*footer*/
+#section3{
+    background: #130e0c;
+     color: white;
+  position: relative;
+}
+.footerLeft{
+    width: 39px;
+    height: 152px;
+    text-indent: -9999px;
+    background: url(../images/footerlogo.png) no-repeat;
+    margin-left: 100px;
+    background-position:0 center;
+  
+}
+.footer{
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding-left: 20%;
+    box-sizing: border-box;
+}
+.footer span{}
+.footer .left{}
+.footer .left img{
+vertical-align: middle;
+}
+.footer .left span{}
+.footer .right{
+    padding: 20px 0;
+     border-bottom: 1px solid #fff;
+}
+.footer .right img{
+  vertical-align: middle;
+
+   
+}
+.footer .right span{
+
+ 
+}
+.footerbottom{
+    padding:15px 0;
+}
+.footerbottom img{
+      vertical-align: middle;
+}
+
+.footerbottom span{
+ 
+}
+.facebook{
+
+    background: url(../images/facebook.png) no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right:50px;
+    top:93px;
+
+   
+}
+.instagram{
+    background: url(../images/insta.png) no-repeat;
+    background-position: right;
+    text-indent: -9999px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top:93px;
+    vertical-align: middle;
+}
+
+
+
+
+
+
