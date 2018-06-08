@@ -89,7 +89,7 @@ body{
 .headerIn a span{
     color: #fff;
     font-family: 'Dancing Script';
-   
+   line-height: 59px;
 }
 /*메뉴시작*/
 .gnb{
