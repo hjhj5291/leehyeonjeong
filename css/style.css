@@ -362,17 +362,17 @@ content: "";
      text-align: center;
       color: #fff;
     padding: 30px 0;
-    font-size: 18px;
+    font-size: 22px;
 }
 .section2box2{
     width: 30%;
-    height: 21%;
+    height: 20%;
    box-sizing: border-box;
     background: #ed1f24;
     background: rgba(232,30,35,0.8);
     padding: 50px 0;
     display: block;
-    margin:240px 200px;
+    margin:280px 200px;
     position: absolute;
 
 }
