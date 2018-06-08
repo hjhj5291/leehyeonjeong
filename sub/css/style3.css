@@ -178,9 +178,9 @@ body{
 .entries:before{
  content: '';
     position: absolute;
-    top: 50px;
+    top: 24px;
     left: 50%;
-    bottom:200px;
+    bottom:199px;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 4px;
