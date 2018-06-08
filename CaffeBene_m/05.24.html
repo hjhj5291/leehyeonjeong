@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>    
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<title>카페베네 모바일</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">    
+</head>
+    
+<body>
+<!--전체시작-->   
+<div id="wrap">    
+
+
+<div id="paneIBg"></div>   
+ <!-- panel -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <div class="page01">이현정<span>님</span></div>
+      <div class="page02">Gold Level</div>
+    
+        <div class="sidenav1">
+            <a href="#" class="leftmenu01"><span>아이콘</span>홈</a>
+            <a href="#" class="leftmenu02"><span>아이콘</span>스탬프</a>
+            <a href="#" class="leftmenu03"><span>아이콘</span>쿠폰</a>
+            <a href="#" class="leftmenu04"><span>아이콘</span>Caff'e Bene카드</a>
+            <a href="#" class="leftmenu05"><span>아이콘</span>선물하기</a>
+            <a href="#" class="leftmenu06"><span>아이콘</span>바로주문</a>
+            <a href="#" class="leftmenu07"><span>아이콘</span>주문내역 확인</a>
+            <a href="#" class="leftmenu08"><span>아이콘</span>전자영수증</a>
+            <a href="#" class="leftmenu09"><span>아이콘</span>이벤트</a>
+            <a href="#" class="leftmenu10"><span>아이콘</span>매장찾기</a>
+            <a href="#" class="leftmenu11"><span>아이콘</span>제품소개</a>
+            <a href="#" class="leftmenu12"><span>아이콘</span>이용안내</a>
+        </div>
+    
+        <div class="text">
+            <p>본사 서울시 광진구 동일로 427</p>
+            <p>개설문의1688-7200 소비자대표번호 1688-4666 </p>
+            <p>Copyright © by Caffebene. All right reserved</p>
+        </div>    
+    
+</div>
+    
+<!--헤더시작-->      
+<header id="header">
+<!--헤더탑 시작-->
+<div class="headerTop">
+
+                <span class="openbtn" onclick="openNav()"><i class="fas fa-align-left"></i></span>    
+    
+                <h1><a href="#">로고</a></h1>
+    
+                <div class="Right_icon">
+                       <a href="#">
+                                icon
+                        </a>
+                </div>
+</div>
+<!--헤더탑 끝-->
+        
+<!--headerleft-->
+<div class="headerleft">
+            <span class="left1 cf">안녕하세요.</span>
+            <span class="left2">이현정</span>
+            <span class="left1">님</span>
+</div>
+<!--headerleft-->
+    
+<!--headerright--> 
+<div class="headerright">
+    
+    <div class="right1">
+        <span class="right1-1">1</span>
+        <span class="right1-2">/ 12</span>
+    </div>
+    
+    <div class="right2">
+        <div class="right2-1">더보기</div>
+        <div class="right2-2">바코드</div>
+    </div>
+    
+    <div class="right3 cf">
+        <div>별</div>
+        <span>Gold Level</span>
+    </div>  
+    
+</div>
+<!--headerright-->    
+</header>
+<!--헤더끝-->     
+    
+<!--메인슬라이더시작-->
+<div class="mainslider">
+    
+  <ul class="cf">      
+            <li class="icon1 borderR0 borderB0">
+                <a href="#">
+                    <p>스탬프</p>  
+                 </a>    
+            </li>
+       
+                <li class="icon2 borderB0">
+                    <a href="#">
+                        <p>쿠폰</p>
+                    </a>    
+                </li>
+          
+                <li class="icon3 borderR0 borderB0"> 
+                    <a href="#">
+                        <p>카페베네 카드</p>
+                      </a>    
+                 </li>
+          
+                <li class="icon4 borderB0"> 
+                    <a href="#">
+                        <p>선물하기</p>
+                    </a>    
+                 </li>
+             
+                 <li class="icon5 borderR0">
+                     <a href="#">
+                        <p>혜택/소식</p>
+                    </a>     
+                 </li>
+                    
+                <li class="icon6">   
+                    <a href="#"> 
+                        <p>바로 주문</p>
+                    </a>    
+                </li>
+          
+        </ul>
+        
+</div>
+<!--메인슬라이더끝-->
+</div>
+<!--전체-->    
+    
+ <!--메뉴바-->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("paneIBg").style.display = "block"; /*오른쪽메뉴눌렀을때 배경 흐리게 보이게*/
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("paneIBg").style.display = "none"; /*오른쪽메뉴눌렀을때 배경 흐리게 보이게*/
+}   
+</script>
+</body>
+</html>
+    

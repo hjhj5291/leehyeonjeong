@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+    font-family:'NotoSansKR',sans-serif;
+}
+body,h1,h2,h3,p,span{
+    margin:0;
+  
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+
+}
+#wrap{
+width: 100%;    
+}
+
+/*header*/
+#header{
+
+}
+.headerTop{
+   position: relative;
+     margin: 10px;
+    
+}
+.headerTop div{
+    background: url(../../images/left_03_03.png) no-repeat;
+    background-size: 21px 23px;
+    text-indent: -9999px;
+    float: left;
+    height: 33px;
+    background-position: 0 center;
+
+   
+}
+.headerTop div a{
+     width: 21px;
+    height: 23px;    
+     display: block;
+      
+}
+.headerTop span{
+    font-size: 25px;
+    font-weight: bold;
+    color:#241816;
+    display:block;
+    text-align:center;
+}
+
+.headerTop img{
+  position: absolute;
+    right:0;
+    top:50%;
+   margin-top: -12px;
+}
+
+
+/*.mainslider*/
+.mainslider{
+    margin:20px 0;
+    text-align: center;
+    font-size:0;
+    width: 375px;
+    margin: 0 auto;
+
+   
+}
+.mainslider p{
+
+    display:block;
+   color: #d98626;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: -170px;
+    padding: 20px;
+   
+ 
+}
+.mainslider img{
+
+}
+
+
+/*.mainrow1*/
+.mainrow1{
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0;
+    width: 269px;
+    margin: 0 auto;
+}
+.mainrow1 span{
+
+   
+}
+.mainrow1 span.row1_1{
+    color: #d98626;
+    font-weight: bold;
+    font-size: 40px;
+    display: inline-block;
+}
+.mainrow1 span.row1_1:after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #d98626;
+    margin:0 auto;
+
+}
+.mainrow1 span.row1_2{
+    font-weight: bold;
+     color:#241816;
+    font-size: 20px;
+
+    
+}
+
+.mainrow1 div{
+    background: url(../../images/card2_11.png) no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 0;
+    top:50%;
+    margin-top: -22.5px;
+    display: inline-block;
+    
+
+}
+
+/*mainrow2*/
+.mainrow2{
+margin:150px 0;
+}
+.mainrow2 div{
+    width:33.33%;
+    height: 52px;
+    float: left;
+  text-align: center;
+}
+.mainrow2 div a{}
+.mainrow2 div a img{}
+.mainrow2 div a p{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #3a0706;
+       font-weight: bold;
+}

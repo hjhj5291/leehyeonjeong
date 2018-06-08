@@ -1,0 +1,365 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*************************
+        default
+**************************/
+
+body,h1,h2,h3,p{
+    margin:0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+}
+/*#wrap{
+width: 100%;    
+}*/
+
+/*헤더시작*/
+#header{
+  padding: 10px 20px;
+    position: relative;
+}
+
+.headerIn h1{
+    width: 70px;
+    height: 30px;
+    background: url(images/sp_com.png)no-repeat;
+    background-size: 400px 400px;
+    text-indent: -9999px;
+}
+.headerIn h1 a{
+    
+}
+.panel{
+    width:16px;
+    height:16px;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 20px;
+    background: url(images/sp_com.png)no-repeat;
+    background-size: 400px 400px;
+    background-position:-227px -98px;
+    text-indent: -9999px;
+}
+.panel a{
+
+}
+
+
+
+/*컨텐츠시작*/
+#container{}
+
+/*메인슬라이더*/
+.mainslider{
+    height: 370px;
+    background: url(images/main_img.jpg)no-repeat;
+    background-size: cover;/*풀로채움*/
+    background-position: center center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.mainslider .sliderText{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 80px;
+}
+.mainslider .sliderText p{
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.mainslider .sliderText p.title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.sliderBtn div{
+    width: 13px;
+    height: 23px;
+    background: url(images/sp_com.png)no-repeat;
+    background-position:-64px -30px;
+    background-size: 400px 400px;
+    text-indent: -9999px;
+    position: absolute;
+    top: 50%;
+    margin-top: -12px;
+}
+.sliderBtn div a {
+
+}
+
+.sliderBtn .leftBtn {
+    background-position: -64px -30px;
+    left: 10px;
+    
+}
+.sliderBtn .rightBtn {
+    background-position: -80px -30px;
+    right: 10px;
+}
+
+/*mainRow1*/
+.mainRow1 {
+padding: 10px;
+   
+}
+.mainRow1 div{
+    width: 33.33%;
+    float: left;
+    text-align: center;
+    padding: 15px 0;
+    
+}
+.mainRow1 div a{
+display: block;
+    padding: 15px 0;
+  
+}
+
+.mainRow1 div a span{
+    width: 35px;
+    height: 32px;
+    display: inline-block;
+    /*display: block;
+    margin: 0 auto;디스플레이 인라인 블럭으로하면 굳이 마진 0오토로 안줘도됨*/
+    background: url(images/sp_com.png)no-repeat;
+    background-size: 400px 400px;
+    text-indent: -9999px;
+}
+.mainRow1 div a p {
+
+}
+.mainRow1 div a span.icon1 {
+    background-position:-1px -57px;
+
+}
+
+.mainRow1 div a span.icon2 {
+    background-position: -34px -57px;
+}
+
+.mainRow1 div a span.icon3 {
+    background-position: -72px -57px;
+}
+
+.mainRow1 div a span.icon4 {
+    background-position: -106px -57px;
+}
+
+.mainRow1 div a span.icon5 {
+    background-position: -142px -57px;
+}
+
+.mainRow1 div a span.icon6 {
+    background-position: -180px -57px;
+}
+
+
+
+/*.mainRow2*/
+.mainRow2{
+    padding: 0 10px;
+}
+.mainRow2 div{
+    width: calc(50% - 5px);
+    float: left;
+   text-align: center;
+font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+}
+.mainRow2 div:nth-child(1){
+        background: url(images/mainrow3_img1.jpg)no-repeat;
+        background-size: cover;
+}
+.mainRow2 div:nth-child(2){
+    background: url(images/mainrow3_img2.jpg)no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+.mainRow2 div:nth-child(3){
+    background: url(images/mainrow3_img3.jpg)no-repeat;
+    background-size: cover;
+  
+}
+.mainRow2 div:nth-child(4){
+    background: url(images/mainrow3_img1.jpg)no-repeat;
+    background-size: cover;
+      margin-right: 0;
+}
+.mainRow2 div a{
+    color: white;
+    display: block;
+    padding: 80px 0;
+}
+.mainRow2 div:nth-child(2) a{
+      color: #000;
+}
+
+.mainRow2 div a p{}
+
+
+/*.mainRow3*/
+.mainRow3{
+    padding: 0 10px;
+
+}
+.notice,.news{
+    background: #f2f0ed;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.mainRow3 .title{
+    width: 20%;
+    color: #2b5b79;
+     font-weight: bold;
+    float: left;
+    text-align: center; 
+}
+.mainRow3 .con{
+    width: 80%;
+   float: left;
+    padding-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*.mainRow4*/
+.mainRow4{
+    background: url(images/mainrow4_bg.jpg) no-repeat;
+    background-size: cover;
+    padding: 15px; 10px;
+}
+.mainRow4 div{
+    width: calc(50% - 5px);
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.mainRow4 div:nth-child(1){
+        background: url(images/mainrow5_img1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.mainRow4 div:nth-child(2){
+            background: url(images/mainrow5_img2.jpg) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 0;
+}
+.mainRow4 div:nth-child(3){
+            background: url(images/mainrow5_img3.jpg) no-repeat;
+     background-size: 100% 100%;
+}
+.mainRow4 div:nth-child(4){
+            background: url(images/mainrow5_img4.jpg.jpg) no-repeat;
+  background-size:100% 100%;
+    margin-right: 0;
+}
+
+.mainRow4 div a{
+    padding: 80px 0 20px 0;
+    display: block;
+}
+
+
+/*footer*/
+#footer{
+    background: #383f43;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing:-1px;
+}
+#footer div{
+    padding: 15px 0;
+    text-align: center;
+}
+#footer div.copy{
+    background: #4c5459;
+padding: 20px 0;
+}
+#footer ul{}
+#footer ul li{
+    display: inline-block;
+    line-height: 30px;
+}
+#footer ul li:after{
+    content: " ｜";
+    display: inline-block;
+    color: #fff;
+}
+#footer ul li:last-child:after{
+    display: none;
+}
+#footer ul li a{
+        color: #fff;
+}
+#footer ul.cs{
+    font-size: 0;
+    margin-top: 10px;
+    
+}
+#footer ul.cs li{
+    padding:5px 15px;
+    vertical-align: top;
+}
+#footer ul.cs span{
+    padding-left: 15px;
+}
+#footer ul.cs li:after{
+    display: none;
+}
+#footer ul.cs li:first-child{
+    background: #2a3033;
+     font-size: 14px;
+}
+#footer ul.cs li:last-child{
+    padding: 0;
+}
+#footer ul.cs li select{
+    width: 120px;
+   line-height: 40px;
+    border: 0;
+    text-indent: 15px;
+    background: url(images/Untitled-1.png) no-repeat;
+    background-size: 7px;
+ background-position: 90% center;
+-webkit-appearance:none;
+    background-color: #fff;
+      margin-left: 5px;
+     font-size: 12px;
+}
+
+
+
+
+/*반응형*/
+@media only screen and (max-width: 768px) {
+    body{
+
+    }
+}
+

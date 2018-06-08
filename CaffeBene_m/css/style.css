@@ -1,0 +1,407 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body,h1,h2,h3,p,span{
+    margin:0;
+    
+}
+body{
+    height: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+}
+#wrap{
+width: 100%;    
+    height: 100%:
+}
+
+/*패널*/
+.openbtn{
+    color: #241816;
+    font-size: 30px;
+    z-index: 1000;
+    cursor: pointer;
+     position: absolute;
+    left: 10px;
+}
+.sidenav {
+height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    background-color: #241816;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+    
+}
+.sidenav{
+    width: 250px;
+}
+.sidenav a {
+    width: 200px;
+    line-height: 38px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+
+}
+.sidenav1 a span{
+    width: 45px;
+    height: 35px;
+    display:inline-block;
+    background:url(../images/menu1_07.png) no-repeat center center;
+    text-indent:-9999px;
+}
+.sidenav a:hover{
+    color: #fff;
+}
+
+
+
+.sidenav .closebtn {
+    width:auto;
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: 30px;
+    margin-right: 50px;
+     border-bottom:none;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#paneIBg{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.4);
+    display: none;
+    position: absolute;
+    z-index: 1;
+     top: 0;
+}/*오른쪽메뉴눌렀을때 배경 흐리게 보이게*/
+
+
+.page01{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-left: 30px;
+    width: 250px;
+}
+.page01 span{
+     font-size: 15px;
+     font-weight: 100;
+}
+.page02{
+    font-size: 15px;
+    font-weight: 600;
+    color: #d98626;
+    padding-left: 45px;
+    background: url(../images/icon4_22.png) no-repeat;
+    background-position:25px;
+    margin:15px 0;
+    width: 250px;
+}
+
+
+/*sidenav1*/
+.sidenav1{
+width: 250px;
+    
+}
+
+.sidenav1 .leftmenu02 span{
+         background: url(../images/menu2_10.png) no-repeat center center;
+}
+.sidenav1 .leftmenu03 span{
+    background: url(../images/menu3_13.png) no-repeat center center;
+}
+.sidenav1 .leftmenu04 span{
+    background: url(../images/menu4_17.png) no-repeat center center;
+}
+.sidenav1 .leftmenu05 span{
+    background: url(../images/menu5_21.png) no-repeat center center;
+}
+.sidenav1 .leftmenu06 span{
+    background: url(../images/menu6_24.png) no-repeat center center;
+}
+.sidenav1 .leftmenu07 span{
+    background: url(../images/menu7_28.png) no-repeat center center;
+}
+.sidenav1 .leftmenu08 span{
+    background: url(../images/menu8_31.png) no-repeat center center;
+}
+.sidenav1 .leftmenu09 span{
+    background: url(../images/menu9_33.png) no-repeat center center;
+}
+.sidenav1 .leftmenu10 span{
+    background: url(../images/menu10_37.png) no-repeat center center;
+}
+.sidenav1 .leftmenu11 span{
+    background: url(../images/menu11_41.png) no-repeat center center;
+}
+.sidenav1 .leftmenu12 span{
+    background: url(../images/menu12_44.png) no-repeat center center;
+}
+.sidenav .text{
+    width: 250px;
+     text-align: center;
+    color: white;
+    font-size: 10px;
+    padding: 5px 0;
+}
+.sidenav .text p{
+padding: 2px 0;
+
+}
+
+
+
+
+/*헤더시작*/
+#header{
+
+   
+
+}
+.headerTop{
+     margin: 10px 0; 
+}
+
+.panel{}
+.panel a{}
+.panel a span{}
+
+.headerTop h1{
+    width: 211px;
+    height: 40px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -9999px;    
+    margin: 0 auto;
+}
+.headerTop h1 a{
+    display: block;
+}
+
+
+
+.Right_icon{
+    width: 47px;
+    height: 40px;
+    background: url(../images/icon1.png) no-repeat;
+    text-indent: -9999px;
+    position: absolute;
+    right:10px;
+    top:10px;
+    
+}
+.Right_icon a{
+      display:block;
+    height: 100%;
+}
+
+/*.headerleft*/
+.headerleft{
+    padding: 80px 10px; 
+}
+.headerleft span{
+color: #241816;
+font-size: 25px;
+
+}
+.headerleft span.left1{
+    font-weight: 500;
+}
+.headerleft span.left2{
+font-size: 30px;
+font-weight: bold;
+letter-spacing: 3px;
+}
+
+
+/*headerright*/
+.headerright{
+    position: relative;
+    
+}
+
+.right1{
+    position: absolute;
+    right: 20px;
+    top: -170px;
+}
+.right1 span{}
+.right1 span.right1-1{
+     color: #d98626;
+    font-size: 30px;
+    font-weight: bold;
+}
+.right1 span.right1-2{
+    color: #241816;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.right2{
+    position: absolute;
+    right: 20px;
+    top: -110px;
+}
+.right2 .right2-1{
+    width: 21px;
+    height: 28px;
+    background: url(../images/icon3_14.png) no-repeat;
+    text-indent: -9999px;
+   margin-right: 10px;
+    float: left;
+    background-position: 0 center;
+}
+.right2 .right2-2{
+    width: 54px;
+    height: 28px;
+    background: url(../images/icon2.png) no-repeat;
+    /* margin: 0 20px; */
+    text-indent: -9999px;
+    float: left;
+}
+
+.right3{
+    position: absolute;
+    right:20px;
+    top: -60px;
+}
+.right3 div{
+    width: 19px;
+    height: 18px;
+    line-height: 18px;
+    background: url(../images/icon4_22.png) no-repeat;
+    text-indent: -9999px;
+    float: left;
+   
+}
+.right3 span{
+    line-height: 18px;
+    color: #d98626;
+    font-size: 20px;
+    font-weight: bold;
+  
+}
+
+
+/*mainslider*/
+.mainslider{
+    position: relative;
+    width:100%;
+    height:100%;
+    background: url(../images/main.png) no-repeat;
+    padding:10px;
+    box-sizing:border-box;
+    background-size: cover;
+    
+}
+
+.mainslider ul li{
+    width: 50%;
+    height:135px;
+    float: left;
+    position: relative;
+}
+.mainslider ul li:before{
+    content:"";
+    display:block;
+    width:70%;
+    height:100%;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    position:absolute;
+    left:50%;
+    margin-left:-35%;
+}
+
+.mainslider ul li:after{
+    content:"";
+    display:block;
+    width:100%;
+    height:80%;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    position:absolute;
+    top:20px;
+    box-sizing:border-box;
+}
+.mainslider ul li.borderR0:after{
+    border-right:0;
+}
+.mainslider ul li.borderB0:before{
+    border-bottom:0;
+}
+.mainslider ul li a{
+   display: block;
+
+}
+.mainslider ul li a p{
+    color: white;
+    text-align: center;
+    padding-top:90px;
+}
+.icon1:before{
+     content:"";
+    display:block;
+    border-bottom: none;
+}
+.icon1 a{
+     background: url(../images/icon5_27.png) no-repeat center center;
+  
+
+}
+.icon1 p{
+ 
+}
+
+.icon2 a{
+    
+    background: url(../images/icon6_30.png) no-repeat center center;
+}
+.icon2 p{}
+
+.icon3 a{
+    background: url(../images/icon7_38.png) no-repeat center center;
+  
+}
+.icon3 p{}
+
+.icon4{
+    background: url(../images/icon8_35.png) no-repeat center center;
+}
+.icon4 p{}
+
+.icon5{
+    background: url(../images/icon9_46.png) no-repeat center center;
+}
+.icon5 p{}
+
+.icon6{
+    background: url(../images/icon10_43.png) no-repeat center center;
+}
+.icon6 p{}

@@ -1,0 +1,182 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*************************
+        default
+**************************/
+
+body,h1,h2,h3,p{
+    margin:0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+}
+#wrap{
+width: 100%;    
+}
+
+/*헤더시작*/
+#header{
+    width: 100%;
+    padding: 20px 0;
+    position: relative;
+}
+
+.headerIn h1{
+    width: 110px;
+    height: 43px;
+    background: url(images/sp_com.png) no-repeat;
+    background-position: 0 0;
+    text-indent: -9999px;
+    position: absolute;
+    top: 5px;
+    margin-left: 20px;
+    background-size: 400px 400px;
+
+}
+#header h1 a{
+      display: block;
+}
+.panel{
+    padding: 0 10px;
+    width:25px;
+    height:20px;
+    position:absolute;
+    top:0;
+    right: 0;
+    text-indent: -9999px;
+    
+}
+.panel a{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+   
+    
+}
+
+.panel span{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 5px auto;
+}
+.panel span:last-child{
+    width: 15px;
+   
+}
+
+
+
+/*컨텐츠시작*/
+#container{}
+
+/*메인슬라이더*/
+.mainslider{
+    margin: 0 auto;
+    position: relative;
+
+}
+.mainslider img{
+ /*백그라운드로하려면 박스사이즈정해줘야함*/
+    width: 690px;
+     display: block;/*이미지요소라서*/
+    position: absolute;
+  
+
+}
+.sliderBtn div{
+    width: 13px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    margin-top: 130px;
+    background: url(images/sp_com.png) no-repeat;
+    text-indent: -9999px;
+
+    
+}
+.sliderBtn div a {
+    display: block;
+    height: 100%;
+    
+}
+
+.sliderBtn .prevBtn {
+    background-position: -65px -30px;
+    left: 20px;
+    background-size: 400px 400px;
+    
+}
+.sliderBtn .nextBtn {
+    background-position: -80px -30px;
+    right: 20px;
+    background-size: 400px 400px;
+}
+
+/*mainRow1*/
+.mainRow1 {
+   display: block;
+    padding:300px 0;
+width:calc(50% - 1px);
+    margin: 0 auto;
+   
+}
+.mainRow1 ul {
+    
+}
+.mainRow1 ul li {
+    float: left;
+    text-align: center;
+  
+}
+
+.mainRow1 ul li a {
+    display: block;
+}
+.mainRow1 ul li a span {
+    width: 35px;
+    height: 30px;
+    display: block; /*<span>이 inline요소이므로 width, height값이 적용되지 않으므로 block으로 수정 */
+    margin: 0 auto; /* <span>을 block요소로 바꾸었기 때문에 text-align: center;가 적용되지 않음 -> 가운데 정렬을 위해 margin: 0 auto; 적용 */
+    background: url(images/sp_com.png) no-repeat;
+    text-indent: -9999px;
+    background-size: 400px 400px;
+  
+}
+.mainRow1 .icon1 {
+    background-position: 0 -60px;
+
+}
+
+.mainRow1 .icon2 {
+    background-position: -41px -60px;
+}
+
+.mainRow1 .icon3 {
+    background-position: -78px -58px;
+}
+
+.mainRow1 .icon4 {
+    background-position: -148px -58px;
+}
+
+.mainRow1 .icon5 {
+    background-position: -110px -58px;
+}
+
+.mainRow1 .icon6 {
+    background-position: -185px -58px;
+}

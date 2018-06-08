@@ -1,0 +1,315 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body,h1,h2,h3,p{
+    margin:0;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+}
+#wrap{
+width: 100%;    
+}
+
+/*헤더시작*/
+#header{}
+.headerTop{
+    height:40px;
+    background: url(../images/bg_top.gif);
+    position: relative;
+}
+.headerTop h1{
+    background: url(../images/logo.gif) no-repeat;
+    text-indent: -9999px;
+    width:150px;
+    height: 100%;
+    background-size: 100%;/*이미지를 백그라운드로 줬기때문 이미지로 줬으면 width100으로하면됨*/
+    background-position:0 center;
+    margin-left:10px;/*백그라운드라서 마진 레프트로*/
+}
+.headerTop h1 a{}
+.panel{
+    padding: 0 10px;
+    width:25px;
+    height:40px;
+    position:absolute;
+    top:0;
+    right: 0;
+    text-indent: -9999px;
+    background:#10509d; 
+}
+.panel a{
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+   
+    
+}
+.panel a:before,.panel a:after{
+    content:"";
+    display:block;
+    width:25px;
+    height:2px;
+    margin:0 auto;
+    background:#fff;
+    
+}
+.panel span{
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: 5px auto;
+}
+.gnb{
+    background: url(../images/bg_gnb.gif);
+    
+}
+.gnb li{
+    width: 20%;
+    height: 29px;
+    line-height: 29px;
+    float: left;
+    font-size:12px;
+    letter-spacing: -1px;
+    text-align: center;
+    border-left:1px solid #666;
+    border-right:1px solid #333;
+    box-sizing: border-box;/*박스랑 패딩 없애줌*/
+}
+.gnb li:first-child{
+    border-left: 0;
+}
+.gnb li:last-child{
+    border-right:0;
+}
+.gnb li a{
+    color: white;
+}
+
+/*컨텐츠시작*/
+#container{}
+.mainslider{
+    position: relative;
+}
+.mainslider img{
+    width: 100%;/*백그라운드로하려면 박스사이즈정해줘야함*/
+     display: block;/*이미지요소라서*/
+}
+.leftbtn{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 0;/*동그라미 간격 줄여줌*/
+}
+.leftbtn a{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    background: url(../images/blet_visual.png) no-repeat;
+    text-indent: -9999px;
+}
+.leftbtn a.on{
+    background-position:0 -16px;
+}
+.rightbtn{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    font-size: 0;/*재생버튼이미지 딱 붙게*/
+}
+.rightbtn a{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background: url(../images/btn_visual_cnt.png) no-repeat;
+     text-indent: -9999px;
+    margin-left: 1px;
+}
+.rightbtn a:nth-child(2){
+    background-position:-46px 0; 
+}
+.rightbtn a:nth-child(3){
+      background-position:-92px 0; 
+}
+
+/*브랜드사이트시작*/
+.mainrow1{}
+.mainrow1 h2{
+    width: 35%;
+    margin:20px auto;
+}
+.mainrow1 h2 img{
+    width: 100%;
+}
+.mainrow1 div {
+    width: 100%;
+    height: 200px;
+    background: url(../images/brandSite_img01.jpg) no-repeat;
+    background-size: cover;/*그사이즈에 맞게또는 넓게 채워줌*/
+    background-position: center center;
+    margin-bottom:2px;
+}
+.mainrow1 .list02{
+    background: url(../images/brandSite_img02.jpg) no-repeat;
+    background-size: cover;/*그사이즈에 맞게또는 넓게 채워줌*/
+    background-position: center center;
+}
+.mainrow1 .list03{
+    background: url(../images/brandSite_img03.jpg) no-repeat;
+    background-size: cover;/*그사이즈에 맞게또는 넓게 채워줌*/
+    background-position: center center;
+}
+.mainrow1 div a{
+    color: white;
+    display: block;
+    height: 100%;
+    
+}
+.mainrow1 div a span{
+      padding-left: 15px;
+}
+.mainrow1 div a span.title{
+    display: block;
+    padding-top: 130px;
+    font-size: 25px;
+}
+
+/*뉴스시작*/
+.mainrow2{}
+.mainrow2 div{}
+.mainrow2 div a{
+    width:calc(50% - 1px);
+    float: left;
+    margin-bottom: 2px;
+
+}
+.mainrow2 div a:nth-child(odd){
+    margin-right: 1px;
+}
+.mainrow2 div a:nth-child(even){
+    margin-right: 1px;
+}
+.mainrow2 div a:nth-child(n+3) ul{
+    height: 100px;
+}
+.mainrow2 div a img{
+    width: 100%;
+    display: block;
+}
+.mainrow2 div a ul{
+    padding:15px;
+    height: 150px;
+    background: #1c97fe;
+    color: white;
+
+}
+.mainrow2 div a ul li{
+    font-weight: bold;
+    font-size: 16px;
+     margin-bottom:15px;
+}
+.mainrow2 div a ul li:last-child{
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/*상품뷰*/
+.mainrow3{}
+.mainrow3 h2{
+    width: 40%;
+    margin:20px auto;
+}
+.mainrow3 h2 img{
+    width: 100%;
+}
+.mainrow3 ul{}
+.mainrow3 ul li{
+    width: 50%;
+    height: 135px;
+    float: left;
+    font-size: 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+.graybg{
+background: #f1f1f1;    
+}
+.imgMt img{
+    margin-top: 20px;
+}
+.mainrow3 ul li.h180{
+    height:180px;
+}
+.mainrow3 ul li img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.mainrow3 ul li a{}
+.mainrow3 ul li h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.mainrow3 ul li p{}
+
+/*푸터*/
+#footer{
+    /*height:126px;*/
+    padding: 20px 0;
+    text-align: center;
+    background:url(../images/bg_footer_new.gif);
+    font-size: 10px;
+    letter-spacing:-1px;
+    color: white;
+ 
+}
+#footer p{
+        font-size: 10px;
+}
+#footer span{
+    border: 1px solid #fff;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 2px;
+     font-size: 10px;
+    margin: 0 3px;
+    margin-top: 10px;
+}
+#footer span a{
+    padding: 5px 10px;
+    color: white;
+    display: block;
+}
+
+
+
+
+
+
+

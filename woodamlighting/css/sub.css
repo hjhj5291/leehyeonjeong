@@ -1,0 +1,630 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+/************************
+        default
+*************************/
+body{
+    min-width: 1000px;
+    font-family: 'Noto Sans KR' ,sans-serif;
+  
+}
+body,h1,h2,h3,h4,h5,h6,p,dl,dd{
+    margin:0;
+
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    color: black;
+}
+.cf:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#wrap{
+    width:100%;
+}
+.inner{
+    width:1000px;
+    margin:0 auto;
+
+}
+
+
+
+/************************
+        header
+*************************/
+#header{
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    z-index: 100;
+}
+#header h1{
+    width: 183px;
+    height: 45px;
+    margin-left: 50px;
+    margin-top: 7px;
+    background: url(../images/common/logo.png) no-repeat;
+     text-indent: -9999px;
+    display: inline-block;
+
+}
+#header h1 a{
+    display: block;
+}
+
+.gnb{
+    display: inline-block;/*가로정렬*/
+    vertical-align: middle;
+    font-size:17px; 
+    font-weight: 400;
+    margin-left: 30px;
+}
+.gnb li{
+ height: 110px;
+    line-height: 110px;
+  float: left;
+}
+.gnb li a{
+color: #292929;
+padding: 0 40px;
+
+
+}
+.gnb .lnb{
+
+}
+.gnb li .lnb{
+
+    
+}
+
+.lnb{
+
+}
+
+.lnb li{
+    
+}
+.lnb li a{}
+
+
+.topBtn{
+    width:360px;
+    position:absolute;
+    right:0;
+    top:110px;
+    background:#fff;
+    border-top:1px solid #f3f3f3;
+    z-index:1;
+}
+.topBtn div{
+    width:50%;
+    height:50px;
+    line-height:50px;
+    font-size:13px;
+    text-align:center;
+    float:left;
+    background:url(../images/sub/btn_link1_off.png) no-repeat;
+    background-position:30px center;
+    position:relative;
+}
+.topBtn div a{
+    padding-left:20px;
+    display:block;
+    color:#a5a5a5;
+}
+.topBtn .rightBtn{
+    background:url(../images/sub/btn_link2_off.png) no-repeat;
+    background-position:15px center;
+}
+.topBtn .leftBtn:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:8px;
+    background:#f3f3f3;
+    position:absolute;
+    top:50%;
+    margin-top:-4px;
+    right:0;
+}
+.topBtn div:hover a{
+    color:#f47a20;
+}
+.topBtn .leftBtn:hover{
+    background:url(../images/sub/btn_link1_on.png) no-repeat;
+    background-position:30px center;
+}
+.topBtn .rightBtn:hover{
+    background:url(../images/sub/btn_link2_on.png) no-repeat;
+    background-position:15px center;
+} 
+/*container*/
+#container{
+    padding-top:110px;
+}
+
+/*mainslider*/
+.mainslider{
+    height: 560px;
+    overflow: hidden;
+    position: relative;
+}
+.mainslider img{
+position: absolute;
+ left: 50%;
+margin-left: -1000px;
+
+
+}
+.sliderText{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    height: 254px;
+    top: 50%;
+    margin-top: -188px;
+}
+.sliderText h3{
+    height: 44px;
+    line-height: 44px;
+     background: url(../images/sub/bracket_title.png) no-repeat;
+    background-position:center 0;
+    font-weight: 300;
+    font-size: 20px;
+    color: #bbb;
+    letter-spacing:15px;
+}
+
+.textBox{
+    font-weight: 500;
+    text-shadow:1px 1px 5px rgba(0,0,0,0.5);
+    font-size: 50px;
+      letter-spacing:25px;
+}
+
+.textBox span{
+    color: #f47a20;
+display: inline-block;
+}
+.textBox span:after{
+    content: "";
+    display: block;
+    width: 170px;
+    height: 1px;
+    background: #f47a20;
+   
+}
+.subnav{
+    width: 1000px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -500px;/*중간정렬*/
+    position: absolute;
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom:1px solid #e4e4e4;
+}
+.subnav li{
+    float: left;
+   
+}
+.subnav li a{
+    display: block;
+    padding:0 20px;
+    background: url(../images/sub/ar_snb.png) no-repeat;
+    background-position: right center;
+}
+.subnav .icon{
+    width: 60px;
+    height: 60px;
+    background: url(../images/sub/ico_home.png) no-repeat;
+    background-color: #f47a20;
+    text-indent: -9999px;
+    background-position: center center;
+}
+.subnav .navtitle{
+    width: 120px;
+    text-align: center;
+    border-right:1px solid #e4e4e4;
+}
+.subnav .navmenu{
+    width: 180px;
+     border-right:1px solid #e4e4e4;
+}
+
+
+
+
+
+
+/*companywrap*/
+.companywrap{
+    width: 1000px;
+    margin:0 auto;
+    padding: 50px 0;
+}
+.company01{
+    height: 700px;
+    background:url(../images/sub/bg_introduction_info.png) no-repeat;
+    background-size: 100%;
+    background-position:0 bottom;
+}
+.company01 h2{
+ font-size: 35px;
+font-weight: 400;
+color: #090909;
+}
+.company01 h2:before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #000;
+}
+
+.companyInfo{
+    padding-left:10px;
+}
+.companyInfo h4{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c2c2c;
+}
+.companyInfo dl{
+    font-size: 13px;
+    overflow: hidden;
+padding: 10px 0;
+}
+.companyInfo dl dt{
+    width: 100px;
+    float: left;
+    position: relative;
+    color: #2c2c2c;
+}
+.companyInfo dl dt:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 8px;
+    background: #e2e0e3;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 0;
+}
+.companyInfo dl dd{
+      float: left;
+    padding-left: 15px;
+    color: #6c6c6c;
+}
+.companyInfo dl dd p{}
+
+.emailBtn{
+    width: 110px;
+    height: 25px;
+    margin-left: 10px;
+    line-height: 25px;
+    font-size: 13px;
+    background: url(../images/sub/bg_sendemail.png) no-repeat;
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+  
+    
+}
+.emailBtn a{
+    display: block;
+    padding-left: 10px;
+    color: #6c6c6c;
+}
+.emailBtn a{}
+.infotext{
+    margin-top: 80px;
+    margin-left: 60px;
+    color: #fff;
+    
+}
+.infotext h3{
+      font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.infotext p{
+    color: #949494;
+    font-size: 13px;
+}
+
+
+
+
+
+
+/*company02*/
+.company02{
+    padding: 80px 0;
+}
+.title{}
+.title h3{
+    font-weight: 400;
+    font-size:20px;
+    padding-right: 20px;
+    display: inline-block;
+    color: #2c2c2c;
+    vertical-align: middle;/*인라인블럭썼을때 세로정렬*/
+}
+.title p{
+        font-size:13px;
+        color: #7d7d7d;
+      display: inline-block;
+    vertical-align: middle;
+}
+.company02 ul{
+    padding: 30px 0;
+    font-size: 0;
+    text-align: center;
+}
+.company02 ul li{
+    width: 166px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    background: url(../images/sub/ico_vision_1.png) no-repeat center top;
+}
+.company02 ul li p:first-child{
+    padding-top: 130px;
+}
+
+.company02 ul li.icon2{
+        background: url(../images/sub/ico_vision_2.png) no-repeat center top;
+}
+.company02 ul li.icon3 {
+           background: url(../images/sub/ico_vision_3.png) no-repeat center top;
+}
+.company02 ul li.icon4{
+       background: url(../images/sub/ico_vision_4.png) no-repeat center top;
+}
+.company02 ul li.icon5{
+    background: url(../images/sub/ico_vision_5.png) no-repeat center top;
+}
+.company02 ul li.icon6 {
+        background: url(../images/sub/ico_vision_6.png) no-repeat center top;
+}
+
+
+
+
+
+/*company03*/
+.company03{}
+.company03 ul{}
+.company03 ul li{
+    width: 235px;/*합치면 250px*/
+    margin-right: 20px;
+    margin-top: 25px;
+    float: left;
+}
+.company03 ul li:nth-child(4n){
+    margin-right: 0;
+}
+.company03 ul li img{
+    width: 100%;/*이미지 비율이 같아야 함*/
+}
+.company03 ul li p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+
+
+/*footer*/
+#footer{
+     border-top: 1px solid #444;
+    margin-top: 50px;
+    position: relative;
+}
+
+.footerTop{
+ 
+}
+.footerTop div{
+    width:calc(50% - 30px); 
+     float: left;
+    padding-left: 30px;
+  
+}
+.footerTop .left{
+  border-right: 1px solid #e1e1e1;
+   box-sizing: border-box;
+}
+.footerTop .right{}
+.footerTop span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.footerTop .icon{
+    width: 70px;
+    height: 82px;
+    background: url(../images/sub/ico_board_1.jpg) no-repeat;
+    text-indent: -9999px;
+}
+.footerTop .right .icon{
+        background: url(../images/sub/ico_board_2.jpg) no-repeat;
+}
+.footerTop .title{
+    color:#2c2c2c;
+    font-weight: 600;
+}
+.footerTop .title:after{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 8px;
+    background: #f3f3f3;
+    margin:0 15px;
+}
+.footerTop .con{
+    font-size: 13px;
+    color: #888;
+}
+
+
+
+
+/*.footerbottom*/
+.footerbottom{
+    background: #f3f1f4;
+    padding: 50px 0;
+    padding-left: 40px;
+}
+.footerbottom .bottomleft{
+    width: 250px;/*수치 마음대로*/
+    float: left;
+    margin-right: 30px;
+   border-right:1px solid #ddd;
+    margin-bottom: 80px;
+}
+
+.cstitle{
+    color: #2c2c2c;
+    font-size: 20px;
+    font-weight: 600;
+}
+.cstitle span{
+    font-size: 16px;
+    display: block;
+    color: #6c6c6c;
+    font-weight: 500;
+}
+
+.csnumber{
+    font-size: 30px;
+    color: #2c2c2c;
+    margin-top: 15px;
+    line-height: 30px;
+}
+.csnumber span{
+    font-size: 20px;
+    display: block;/*글자가 밑으로 떨어짐*/
+}
+
+.csemail{
+    color: #6c6c6c;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.csicon{
+    margin-top: 15px;
+}
+.csicon li:hover{
+    background: #000;
+}
+.csicon li{
+    width: 25px;
+    height: 25px;
+    background: #343235;
+    float: left;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.csicon li a{
+    display: block;
+}
+.csicon li a img{
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+.footerbottom .bottomright{
+        float: left;
+}
+
+.footerbottom .bottomright div{}
+.footerbottom .bottomright div span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+     color: #6c6c6c;
+}
+.footerbottom .bottomright div span .infotitle{
+      font-weight: 500;
+      color: #2c2c2c;
+}
+.footerbottom .bottomright .title{
+  font-size: 20px;
+    color: #2c2c2c;
+}
+.footerbottom .bottomright .address{
+    margin-top: 25px;
+}
+.footerbottom .bottomright .address .title{
+    width: 80px;
+    margin-right: 0;
+     font-size: 16px;
+    vertical-align: top;
+}
+
+.siteWrap{
+    clear: both;
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top:1px solid #ddd;
+    color: #999;
+    text-align: right;
+}
+.sitemenu{
+    width: 150px;
+    display: inline-block;
+    margin-right: 42px;
+    /*margin: 0 auto;
+    margin-right:0;도 가능*/
+    text-align: left;
+     background: url(../images/sub/ico_add.png) no-repeat;
+    background-position:right center;
+    position: relative;
+    cursor: pointer;/*a태그 안해도 손가락 모양 나옴*/
+}
+.sitemenu:hover ul{
+    display: block;
+}
+.sitemenu ul{
+    display: none;
+    position: absolute;
+    bottom: 42px;
+}
+.sitemenu ul li{}
+.sitemenu ul li a{}
+
+
+.footertopbtn{
+    width: 42px;
+    height: 42px;
+    background: #343235;
+    position:fixed;
+    right: 0;
+    bottom: 0;
+}
+.footertopbtn a{}
+.footertopbtn a img{
+
+}

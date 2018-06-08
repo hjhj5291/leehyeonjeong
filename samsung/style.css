@@ -1,0 +1,388 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+/*************************
+        default
+**************************/
+body {
+    min-width: 1000px;
+   
+}
+
+body, h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#wrap {
+    width: 100%;
+}
+.cf:after {
+    content:"";
+    display: block;
+    clear: both;
+}
+.w1000{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*헤더시작*/
+#header{
+}
+.headerIn{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0;
+    border-bottom:1px solid #e5e5e5;/*줄생기게*/
+    margin-bottom: 35px;
+}
+.headerIn h1{
+    width: 204px;
+    height: 28px;
+    background: url(hompage/common/h1_samsungdisplay.gif)no-repeat;
+    background-position:0 center;
+    text-indent: -9999px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+}
+.headerIn h1 a{
+    display: block;
+    
+}
+/*메뉴*/
+.gnb {
+    width: 500px;
+    font-size: 0;
+    float: left;
+    margin-left: 50px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.gnb li{
+    width: 20%;
+    text-align: center;
+    display: inline-block;
+     font-size: 14px;
+    vertical-align: top;
+}
+.gnb li:hover .lnb{
+    display: block;
+}
+.gnb li a{
+   display: block;
+}
+.lnb{
+    width: 100%;
+     position: absolute;
+    display: none;
+    padding-left:15px;/*호버했을때 글자 맞춰줌 (들여쓰기)*/
+}
+.lnb li{
+   width:auto;
+    float: left;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.lnb li:hover a{
+    color: #007cc0;
+}
+.lnb li a{}
+
+/*유틸*/
+.utill {
+    font-size: 0;/*인라인블럭 옆에 빈공간 없애줌 그러면 글자 안보이는데 li에 폰트사이즈 조절하면 됨*/
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -8px;/*중간정렬*/
+}
+.utill li {
+  padding-left: 15px;
+    display: inline-block;
+    font-size: 14px;
+  
+}
+
+.utill li a: {
+   
+}
+.utill li.on a{
+    color:#007cc0;
+    font-weight: bold;
+}
+
+/*컨테이너*/
+#container{}
+
+/*메인슬라이더*/
+.mainslider{
+     height: 600px;
+    position: relative;
+    overflow: hidden;
+
+}
+.mainslider img.visual01{
+    z-index: 1;
+    opacity: 1;/*1이 100%센트*/
+    animation: slider 2s infinite;
+}
+@keyframes slider{
+    0%{
+        opacity: 1;
+    }
+   /* 50%{
+        opacity: 0.5;
+    }*/
+    100%{
+        opacity: 0;
+    }
+}
+.mainslider img{
+   position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+
+.leftbtn{
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;/*-42는 정중앙*/
+    bottom: 30px;
+        z-index: 10;
+}
+.leftbtn li{
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url(hompage/main/blet_visual.png) no-repeat;
+    text-indent: -9999px;
+    margin-right: 5px;
+}
+.leftbtn li.on{
+     background-position:0 -16px;
+
+}
+.leftbtn li a{
+    display: block;
+}
+.rightbtn{
+    position: absolute;
+    right: 50%;
+    margin-right: -500px;
+    bottom: 0;
+    z-index: 10;
+    
+}
+.rightbtn li{
+    width: 45px;
+    height: 45px;
+    background: url(hompage/main/btn_visual_cnt.png) no-repeat;
+    float: left;
+    text-indent: -9999px;
+    margin-left: 1px;
+}
+.rightbtn li:nth-child(2){
+    background-position:-46px 0; 
+}
+.rightbtn li:nth-child(3){
+      background-position:-92px 0; 
+}
+.rightbtn li a{
+     display:block;
+    height:100%;
+}
+
+/*메인로우1*/
+.mainrow1{
+    background: #1c97fe;
+    padding: 50px 0;
+}
+.mainrow1 ul{}
+.mainrow1 ul li{
+    width: 235px;
+    margin-right: 20px;
+    float: left;
+    
+}
+.mainrow1 ul li:last-child{
+    margin-right: 0;
+}
+.mainrow1 ul li h3{
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.mainrow1 ul li a{
+    color: white;
+    display: block;
+}
+.mainrow1 li a img{
+    width: 100%;
+    margin:10px 0;/*p에말고 여기에 해도됨*/
+}
+.mainrow1 li a p{
+    font-size: 12px;
+    letter-spacing: -1px;
+    /*margin-top: 10px;*/
+}
+
+
+/*.mainrow2*/
+.mainrow2{
+    background: url(hompage/main/brandSite_bg.png) no-repeat;
+    background-position:50 0;/*배경 대각선 수치 조절 */
+    padding: 50px 0;
+}
+.mainrow2 h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mainrow2 img{}
+.mainrow2 ul{}
+.mainrow2 ul li{
+    width: 235px;/*1000을 사등분*/
+    margin-right: 20px;
+    float: left;
+    text-align: center;
+}
+.mainrow2 ul li:last-child{
+    margin-right: 0;
+}
+.mainrow2 ul li a{
+    display: block;
+    color: #333;
+}
+.mainrow2 ul li a img{
+    width: 100%;
+}
+.mainrow2 ul li a p{
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.mainrow2 ul li a p span{
+        font-size:13px;
+}
+.mainrow2 ul li a .morebtn{
+    width: 130px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-radius: 20px;
+    background: #263d94;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+/*mainrow3*/
+.mainrow3{
+    padding: 50px 0;
+}
+.mainrow3 h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.mainrow3 .box{
+    width: 320px;
+    margin-right: 20px;
+    float: left;
+    box-shadow:0px 3px 10px #bbb; 
+}
+.mainrow3 .box:last-child{
+       margin-right: 0;
+}
+.mainrow3 .box a{
+    display: block;
+}
+.mainrow3 .box a img{
+    width: 100%;
+}
+.mainrow3 .box a .boxinfo{
+    padding: 20px;
+    color: #333;
+}
+.mainrow3 .box a h3{
+    margin-bottom: 5px;
+}
+.mainrow3 .box a p{
+     font-size: 12px;
+    margin-bottom: 15px;
+}
+.mainrow3 .box a .morebtn{
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    background: #1c97fe;
+    color: white;
+    font-size: 13px;
+    border-radius:20px;
+}
+
+/*footer*/
+#footer{
+    border-top: 1px solid #e6e6e6;
+    padding: 30px 0;
+}
+.footerin{
+    position: relative;
+}
+.footerin h1{
+    width: 117px;
+    display: inline-block;
+}
+.footerinfo{
+    width: 800px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50px;
+    
+}
+.footerinfo ul{
+    font-size: 0;
+}
+.footerinfo ul li{
+    font-size: 10px;
+    letter-spacing: -1px;
+    color: #ccc;
+    display: inline-block;
+}
+
+.footerinfo ul li:before{
+    content: "｜";
+
+}
+.footerinfo ul li:first-child:before,.footerinfo ul li.info:before{
+    display: none;
+}
+.footerinfo ul li a{
+        color: #ccc;
+}
+.footerinfo ul li.info{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.footermark{
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    right: 0;
+}
+.footermark a{}
+.footermark img{}

@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body{
+    font-family:'NotoSansKR',sans-serif;
+}
+body,h1,h2,h3,p,span{
+    margin:0;
+  
+}
+ul{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    color: black;
+    text-decoration:none;
+}
+.cf:after{
+content: "";
+display: block;
+clear: both;
+
+}
+#wrap{
+width: 100%;    
+}
+
+/*header*/
+#header{}
+.headerTop{
+     margin: 10px;
+    
+}
+.headerTop div{
+    background: url(../../images/left_03_03.png) no-repeat;
+    background-size: 21px 23px;
+    text-indent: -9999px;
+    float: left;
+    height: 33px;
+    background-position: 0 center;
+
+   
+}
+.headerTop div a{
+     width: 21px;
+    height: 23px;    
+     display: block;
+      
+}
+.headerTop span{
+    font-size: 25px;
+    font-weight: bold;
+    color:#241816;
+    display:block;
+    text-align:center;
+  
+}
+
+/*headerIn*/
+.headerIn{
+    margin:20px 0;
+    text-align: center;
+    font-size:0;
+}
+.headerIn span{
+width:50%;
+display:inline-block;
+
+ 
+}
+.headerIn span.header_1{
+    color: #d98626;
+    font-weight: bold;
+    font-size: 18px;
+    
+    
+}
+.headerIn span.header_1:after{
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: #d98626;
+    margin:0 auto;
+    margin-top: 5px;
+    
+}
+.headerIn span.header_2{
+    font-weight: 600;
+    font-size:18px;
+    color:#241816;
+}
+
+
+/*row1*/
+.row1{
+    position: relative;
+    margin: 25px auto;
+
+    
+}
+.row1 .left{
+    
+}
+.row1 .left img{
+margin:0 10px;
+    vertical-align: middle;
+}
+.row1 .left span{
+    font-weight: bold;
+ vertical-align: middle;
+}
+
+.row1 .right{
+   position: absolute;
+    right:10px;
+    top: 50%;
+    margin-top: -27px;
+  
+}
+.row1 .right span{
+        
+}
+.row1 .right span.right1-1{
+     color: #d98626;
+    font-size: 30px;
+    font-weight: bold;
+}
+.row1 .right span.right1-2{
+        color: #241816;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/*mainsilder*/
+.mainsilder{
+
+}
+.mainsilder ul{
+     font-size: 12px;
+   margin:10px 5px;
+}
+.mainsilder ul li{
+    list-style-position: inside;
+
+   
+}
+.mainsilder img{
+    width: 100%;
+    
+}
+
+
+/*row2*/
+.row2{
+   
+}
+.row2  .row2_1{
+position: relative;
+   
+}
+.row2  .row2_1 img{
+     position: absolute;
+    left:0;
+    top:50%;
+   margin-top: -7px;
+}
+.row2  .row2_1 span{
+    font-weight: bold;
+    padding: 0 30px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 30px;
+}
+.row2 ol{
+  
+    padding:0 ;
+    
+}
+.row2 ol li{
+    font-size: 12px;
+     margin: 10px 0;
+      list-style-position: inside;
+}
