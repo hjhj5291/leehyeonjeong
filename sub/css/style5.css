@@ -273,6 +273,7 @@ display: none;
 .row1box{
     position: relative;
   overflow: hidden;
+    width:33%;
 
 }
  .row1box:before{
@@ -282,7 +283,8 @@ display: none;
     display: block;
     background: rgba(0,0,0,0);
     position: absolute;
-     left:0;
+     left:50%;
+     margin-left:-181px;
     z-index: 2;
 
 }
