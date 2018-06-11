@@ -178,10 +178,26 @@ article, aside, footer, header, hgroup, main, nav, section {
     color: #010101;
     font-weight: 500;
     text-indent: -22px;
+    font-weight: bold;
 }
 
 .about-ceomsg-txt-top {
     text-align: center;
+    
+}
+.about-ceomsg-txt-1{
+    font-size: 19px;
+  
+}
+.about-ceomsg-txt-2{
+    font-size: 17px;
+    padding: 5px 0;
+   
+}
+.about-ceomsg-txt-3{
+    padding: 50px 0;
+    font-weight: bold;
+    font-size: 20px;
 }
 .icon-qt1 {
     display: inline-block;
@@ -190,6 +206,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     background: url(../img/qtm1.png) no-repeat center center;
     vertical-align: middle;
     margin: -10px 5px -10 0;
+    font-size: 15px;
   
 }
 
@@ -219,9 +236,10 @@ img {
     border-style: none;
 }
 .on>.about-ceomsg-txt {
-    width: 400px;
+    width: 385px;
     right: 0;
      top: 15%;
+    text-align:justify;
 }
 .about-ceomsg-txt {
     display: block;
