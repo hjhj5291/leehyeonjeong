@@ -340,8 +340,7 @@ position: relative;
 .section2box1{
     position: absolute;
     top: 10%;
-    left: 960px;
-    margin-left: -480px;
+    width: 100%;
 }
 .section2box1 h2{
    top: 0;
@@ -366,7 +365,7 @@ content: "";
 }
 .section2box2{
     width: 30%;
-    height: 23%;
+    height: 20%;
    box-sizing: border-box;
     background: #ed1f24;
     background: rgba(232,30,35,0.8);
