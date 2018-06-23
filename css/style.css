@@ -158,22 +158,23 @@ body{
 .textbox{
     position: absolute;
     color: #fff;
-    top: 250px;
-    left: 520px;
+    top: 30%;
+    left:50%;
     z-index: 2;
 }
 .textbox h4{
 padding: 20px 0;
-font-size: 20px;    
+font-size: 25px;    
 font-weight: 500;
 }
 .textbox p{
- 
+ padding-top: 5%;
     font-weight: lighter;
     font-size: 50px;    
 }
 .textbox h1{
-padding: 40px 0;
+padding-right:5%;
+padding-top: 5%;
 font-size: 50px;    
 
 }
@@ -341,7 +342,6 @@ position: relative;
     position: absolute;
     top: 10%;
    width: 100%;
-
 }
 .section2box1 h2{
    top: 0;
@@ -351,18 +351,18 @@ position: relative;
     
 }
 .section2box1 h2:before {
-content: "";
+    content: "";
     display: block;
     width: 35px;
-    height: 3px;
+    height: 5px;
     background: #fff;
     margin:5px auto;
 }
 .section2box1 p{
      text-align: center;
       color: #fff;
-    padding: 30px 0;
-    font-size: 22px;
+    padding-top: 2%;
+    font-size: 25px;
 }
 .section2box2{
     width: 30%;
@@ -382,9 +382,9 @@ content: "";
     
 }
 .section2box2 a p{
-    padding: 45px 0;
+    padding-top: 10%;
        color: #fff;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 

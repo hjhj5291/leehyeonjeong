@@ -60,12 +60,7 @@ clear: both;
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
 }
-.wrap{
-	margin-left: auto;
-	margin-right: auto;
-	width: 1280px;
-	position: fixed;
-}
+
 
 /*header*/
 #header{
