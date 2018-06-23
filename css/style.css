@@ -159,7 +159,7 @@ body{
     position: absolute;
     color: #fff;
     top: 30%;
-    left:50%;
+    left:48%;
     z-index: 2;
 }
 .textbox h4{
@@ -361,8 +361,8 @@ position: relative;
 .section2box1 p{
      text-align: center;
       color: #fff;
-    padding-top: 2%;
-    font-size: 25px;
+    padding-top:3%;
+    font-size: 23px;
 }
 .section2box2{
     width: 30%;
@@ -384,7 +384,7 @@ position: relative;
 .section2box2 a p{
     padding-top: 10%;
        color: #fff;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 

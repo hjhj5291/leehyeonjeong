@@ -223,7 +223,7 @@ letter-spacing: 5px;
 .rightTop dl{
      font-size: 19px;
     overflow: hidden;
-    padding: 20px 0;
+    padding-top: 4%;
 }
 .rightTop dl dt{ 
     width: 100px;
